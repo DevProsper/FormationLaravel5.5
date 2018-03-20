@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 Route::get('my-posts', 'PostController@myPosts');
 Route::resource('posts','PostController');
+
+Route::get('file','FileController@create');
+Route::post('file','FileController@store');
