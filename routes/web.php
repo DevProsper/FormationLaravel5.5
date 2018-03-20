@@ -20,3 +20,5 @@ Route::resource('posts','PostController');
 
 Route::get('file','FileController@create');
 Route::post('file','FileController@store');
+
+Route::get('/send/email', 'HomeController@mailMailTrap');
