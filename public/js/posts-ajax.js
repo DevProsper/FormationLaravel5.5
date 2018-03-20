@@ -117,9 +117,10 @@ function manageRow(data) {
         rows = rows + '</td>';
 
         rows = rows + '</tr>';
+
     });
 
-    $(".body").html(rows);
+    $("tbody").html(rows);
 
 }
 
@@ -153,7 +154,7 @@ $(".crud-submit").click(function(e){
 
         $(".modal").modal('hide');
 
-        toastr.success('Le post a bien été crée.', 'Success Alert', {timeOut: 5000});
+        toastr.success('Post Created Successfully.', 'Success Alert', {timeOut: 5000});
 
     });
 
@@ -181,7 +182,7 @@ $("body").on("click",".remove-item",function(){
 
         c_obj.remove();
 
-        toastr.success('Le post a bien été modifié', 'Success Alert', {timeOut: 5000});
+        toastr.success('Post Deleted Successfully.', 'Success Alert', {timeOut: 5000});
 
         getPageData();
 
