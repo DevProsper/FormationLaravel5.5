@@ -19,7 +19,7 @@ class PostController extends Controller
 
 
     public function index(){
-        $posts = Post::latest()->paginate(1);
+        $posts = Post::latest()->paginate(2);
         return response()->json($posts);
     }
 

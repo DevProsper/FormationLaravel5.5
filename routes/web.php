@@ -23,9 +23,3 @@ Route::post('file','FileController@store');
 
 Route::get('/send/email', 'HomeController@mailMailTrap');
 
-Route::group(['prefix' => 'laravel-image'], function () {
-    Route::get('/', 'Crud5Controller@index');
-    Route::match(['get', 'post'], 'create', 'Crud5Controller@create');
-    Route::match(['get', 'put'], 'update/{id}', 'Crud5Controller@update');
-    Route::delete('delete/{id}', 'Crud5Controller@delete');
-});

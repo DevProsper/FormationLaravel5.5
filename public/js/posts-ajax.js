@@ -1,6 +1,6 @@
-var page = 1;
+var page = 3; //Nombre de lien qui sera affiché à la pagination
 
-var current_page = 1;
+var current_page = 1; //
 
 var total_page = 0;
 
