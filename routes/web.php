@@ -23,3 +23,7 @@ Route::post('file','FileController@store');
 
 Route::get('/send/email', 'HomeController@mailMailTrap');
 
+
+Route::get('/search', 'SearchController@index');
+Route::get('/getSearch', 'SearchController@getSearch');
+
